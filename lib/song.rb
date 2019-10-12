@@ -1,10 +1,12 @@
 require 'pry'
 require_relative '../lib/concerns/memorable.rb'
 require_relative '../lib/concerns/findable.rb'
+require_relative '../lib/concerns/paramable.rb'
 
 class Song
   extend Memorable
   extend Findable
+  extend Paramable
 
   attr_accessor :name
   attr_reader :artist
